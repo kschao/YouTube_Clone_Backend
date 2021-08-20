@@ -1,5 +1,5 @@
-import React from "react";
-import { Menu, Segment } from 'semantic-ui-react'
+import React from 'react';
+import { Menu, Segment } from 'semantic-ui-react';
 
 function NavBar () {
     return (
