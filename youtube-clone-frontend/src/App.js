@@ -12,7 +12,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      videoId: '',
+      videoId: 'd0V2FdtFI_w',
+      selectedVideo: { id: { videoId: 'd0V2FdtFI_w'}},
       videoTitle: '',
       videoDescription: '',
       relatedVideos: [],
@@ -25,7 +26,8 @@ class App extends Component {
   }
 
   handleSubmit = async (searchTerm) => {
-		const response = await axios.get('search', {
+    debugger;
+		const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
 			params: {
 				part: 'snippet',
 				maxResults: 5,
@@ -50,7 +52,7 @@ class App extends Component {
       <Divider />
       <h1>{this.state.videoTitle}</h1>
       <iframe className="iframe" title="title" id="ytplayer" type="text/html" width="640" height="360"
-        src={`https://www.youtube.com/embed/${this.state.videoId}?`}
+        src={`https://www.youtube.com/embed/${this.state.selectedVideo.id.videoId}?autoplay=1&origin=http://example.com`}
           frameBorder="0"><br/>
       </iframe>
       <p>{this.state.videoDescription}</p>
