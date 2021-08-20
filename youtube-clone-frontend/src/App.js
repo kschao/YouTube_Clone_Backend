@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       videoId: 'd0V2FdtFI_w',
       selectedVideo: { id: { videoId: 'd0V2FdtFI_w'}},
-      videoTitle: '',
+      videoTitle: { id: { videoId: 'd0V2FdtFI_w'}},
       videoDescription: '',
       relatedVideos: [],
       RecommendedVideos: []
@@ -55,6 +55,10 @@ class App extends Component {
         src={`https://www.youtube.com/embed/${this.state.selectedVideo.id.videoId}?autoplay=1&origin=http://example.com`}
           frameBorder="0"><br/>
       </iframe>
+      <iframe className="iframe" title="title" id="ytplayer" type="text/html" width="640" height="360"
+        src={`https://www.youtube.com/embed/${this.state.videoTitle.id.videoId}?autoplay=1&origin=http://example.com`}
+          frameBorder="0"><br/>
+      </iframe>   
       <p>{this.state.videoDescription}</p>
       <Comments/>
       <CommentForm/>
