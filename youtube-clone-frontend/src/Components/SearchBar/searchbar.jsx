@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Input, Form, Button } from 'semantic-ui-react'
 
 class SearchBar extends React.Component {
     state = {
