@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import 'semantic-ui-css/semantic.min.css'
 import { Container, Divider, Icon } from 'semantic-ui-react'
-import NavBar from './NavBar/NavBar';
-import Comments from './Comments/Comments';
-import CommentForm from './CommentForm/CommentForm';
-import RecommendedVideos from './RecommendedVideos/RecVideos';
-import SearchBar from './SearchBar/SearchBar'; 
+import NavBar from './Components/NavBar/navbar';
+import Comments from './Components/Comments/Comments'
+import CommentForm from './Components/CommentForm/commentform';
+import RecommendedVideos from './Components/RecommendedVideos/recVideo';
+import SearchBar from './Components/SearchBar/searchbar';
 import { apikey } from '../apikey';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       videoId: '',
