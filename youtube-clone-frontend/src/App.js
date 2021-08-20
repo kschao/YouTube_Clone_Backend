@@ -6,7 +6,7 @@ import NavBar from './Components/NavBar/navbar';
 import Comments from './Components/Comments/Comments'
 import CommentForm from './Components/CommentForm/commentform';
 import SearchBar from './Components/SearchBar/searchbar';
-import { apikey } from '../apikey';
+import { apikey } from '../src/APIkey';
 
 class App extends Component {
   constructor(props) {
