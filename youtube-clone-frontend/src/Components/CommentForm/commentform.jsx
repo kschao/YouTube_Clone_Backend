@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, TextArea, Button } from 'semantic-ui-react'
 
 class CommentForm extends Component {
-    const(props) {
+    constructor(props) {
         super(props);
         this.state = {
             comments: '',
