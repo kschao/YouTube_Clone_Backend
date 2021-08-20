@@ -5,7 +5,6 @@ import { Container, Divider, Icon } from 'semantic-ui-react'
 import NavBar from './Components/NavBar/navbar';
 import Comments from './Components/Comments/Comments'
 import CommentForm from './Components/CommentForm/commentform';
-import RecommendedVideos from './Components/RecommendedVideos/recVideo';
 import SearchBar from './Components/SearchBar/searchbar';
 import { apikey } from '../apikey';
 
