@@ -126,8 +126,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-<<<<<<< HEAD
 CORS_ORIGIN_ALLOW_ALL=True
-=======
-CORS_ORIGIN_ALLOW_ALL=True
->>>>>>> 2a28c61333ef01181045c8e2b4435e898f7a06bb
