@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
 import { Input, Form, Button } from 'semantic-ui-react'
 
-class SearchBar extends React.Component {
-    constructor(props){
+class SearchBar extends Component {
+    constructor(props) {
         super(props);
-        this.state = {
-            searchTerm: ''
-        };
+            this.state = {
+                searchQuery: '',
+            }
     }
 
-    handleChange = (event) => this.setState({ searchTerm:event.target.value });
+    handleChange = (event) => {
+        console.log(event.target.value)
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+    }
+
     handleSubmit = (event) => {
         event.preventDefault();
-        const { searchTerm } = this.state;
-        this.props.onFormSubmit(searchTerm);
-  
-    };
+        this.props.searchVideo(this.state.searchQuery);
+    }
+
     render() {
         return (
-            <Form onSubmit={this.handleSubmit}>
-                <Input placeholder="Search YouTube Videos" onChange={this.handleChange} value={this.state.searchTerm}/>
-                <Button type="submit">Search </Button>
-            </Form>
-        );
+            <form onSubmit={(event) => this.handleSubmit(event)}>
+                <input type="text" name="searchQuery" placeholder="Search..."
+                onChange={this.handleChange} value={this.searchQuery}/>
+                <button className="btn btn-primary" type="submit">Submit </button>
+            </form>
+        )
     }
 }
-export default SearchBar; 
+
+export default SearchBar;
