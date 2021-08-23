@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Form, TextArea, Button } from 'semantic-ui-react'
 
 class CommentForm extends Component {
     constructor(props) {
