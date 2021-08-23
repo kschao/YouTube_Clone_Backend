@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import SearchBar from './components/SearchBar/searchBar';
-import CommentForm from './components/CommentForm/commentForm';
+import CommentForm from './Components/CommentForm/commentForm';
 import CommentList from './components/CommentList/commentList';
 import RelatedVideos from './components/RelatedVideos/relatedVideos'
 
