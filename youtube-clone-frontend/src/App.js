@@ -55,7 +55,7 @@ class App extends Component {
 
   getComments = async () => {
     try{
-      console.log("get all comments request is called")   // test
+      // console.log("get all comments request is called")   // test
       let response = await axios.get('http://127.0.0.1:8000/comments/')
           this.setState({
           comments: response.data,
@@ -63,17 +63,17 @@ class App extends Component {
       this.filterComments();
     }
     catch (err) {
-      console.log(err)
+      // console.log(err)
     }
   }
 
   filterComments = () => {
     let filtered = this.state.comments.filter(comment => comment.video_id.includes(this.state.videoId))
-    console.log(this.state.videoId)   // test
+    // console.log(this.state.videoId)   // test
     this.setState({
       filteredComments:filtered
     })
-    console.log(this.state.filteredComments);
+    // console.log(this.state.filteredComments);
   }
 
   likeComment = async (id, video_id) => {
@@ -91,7 +91,7 @@ class App extends Component {
       }
     }
     catch(err) {
-      console.log(err);
+      // console.log(err);
     }
   }
 
@@ -110,7 +110,7 @@ class App extends Component {
       }
     }
     catch(err) {
-      console.log(err);
+      // console.log(err);
     }
   }
 
