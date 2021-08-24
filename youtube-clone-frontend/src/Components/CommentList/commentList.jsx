@@ -20,16 +20,16 @@ class CommentList extends Component {
             this.setState({
             replies: response.data,
             });
-            console.log(this.state.replies)  // test
+            // console.log(this.state.replies)  // test
         }
         catch (err) {
-            console.log(err)
+            // console.log(err)
         }
     }
     
     render() {
-        console.log(this.props.showReplies)  // test
-        console.log(this.props.commentId)  // test
+        // console.log(this.props.showReplies)  // test
+        // console.log(this.props.commentId)  // test
         return(
             <div>
             {this.props.filteredComments.map((comment) => (
