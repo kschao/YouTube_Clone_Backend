@@ -120,7 +120,7 @@ class App extends Component {
         <React.Fragment>
         <br />
           <br />
-          <div className="container bg-dark text-light border border-primary">
+          <div className="container bg-light text-dark border border-primary">
           <u><h1 className="marquee">YouTube Clone</h1></u>
           <br />
           <SearchBar searchVideo={this.searchVideo}/>
@@ -139,12 +139,12 @@ class App extends Component {
           </div>
           <br />
           <br />
-          <div className="container bg-dark text-light border border-primary">
+          <div className="container bg-light text-dark border border-primary">
           <RelatedVideos relatedVideos={this.state.relatedVideos} />
           </div>
           <br />
           <br />
-          <div className="container bg-dark text-light border border-primary">
+          <div className="container bg-light text-dark border border-primary">
           <CommentForm getComments={this.getComments} videoId={this.state.videoId}/>
           <br />
           <br />
