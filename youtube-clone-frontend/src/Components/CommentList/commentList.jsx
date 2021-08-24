@@ -1,6 +1,6 @@
 import React, { Component }from 'react';
-import LikeComment from '../LikeComment/likeComment';
-import DislikeComment from '../DislikeComment/dislikeComment';
+import LikeComment from '../LIkeComment/likeComment';
+import DislikeComment from '../DisLikeComment/dislikeComment';
 import ReplyForm from '../ReplyForm/replyForm';
 import axios from 'axios';
 

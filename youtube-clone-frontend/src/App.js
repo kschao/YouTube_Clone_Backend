@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import SearchBar from './components/SearchBar/searchBar';
-import CommentForm from './components/CommentForm/commentForm';
-import CommentList from './components/CommentList/commentList';
-import RelatedVideos from './components/RelatedVideos/relatedVideos'
+import SearchBar from './Components/SearchBar/searchbar';
+import CommentForm from './Components/CommentForm/commentform';
+import CommentList from './Components/CommentList/commentList';
+import RelatedVideos from './Components/RelatedVideos/relatedVideos'
 
 class App extends Component {
   constructor(props) {
