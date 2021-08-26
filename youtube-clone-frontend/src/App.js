@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   searchVideo = async (searchQuery) => {
-    let response = await axios.get(`https://www.googleapis.com/youtube/v3/search?q=${searchQuery}&type=video&part=snippet&key=AIzaSyCjN-KiVubfVkVrOHCiY4ADEKeLU9bkqXk`);
+    let response = await axios.get(`https://www.googleapis.com/youtube/v3/search?q=${searchQuery}&type=video&part=snippet&key=APIkey`);
     let allVideos = response.data;
 
     this.getRelatedVideos({
